@@ -13,8 +13,12 @@ connectToDatabase();
 
 app.use("/api", router);
 
+app.get("/", (req, res) => {
+  res.status(200).send("Dairy Milk Distributor API")
+})
+
 app.get("*", (req, res) => {
-  res.send("404 Not Found");
+  res.status(404).send("404 Not Found");
 })
 
 app.listen(PORT, () => {
