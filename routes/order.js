@@ -50,7 +50,7 @@ router.get("/checkCapacity/:date", dateValidation, async (req, res) => {
   }
 })
 
-// @route   GET /api/:orderId
+// @route   GET /api/order/:orderId
 // @desc    Get order by id
 // @access  Public
 router.get("/order/:orderId", async (req, res) => {
@@ -75,7 +75,7 @@ router.get("/order/:orderId", async (req, res) => {
   }
 })
 
-// @route   GET /api
+// @route   GET /api/order
 // @desc    Get all orders
 // @access  Public
 router.get("/order", async (req, res) => {
